@@ -1,0 +1,236 @@
+
+
+
+:root {
+    --white: #fff;
+    --black: #1c2b2d;
+    --blue: #31326f;
+    --light-blue: #005490;
+    --color-primary: #9d0191;
+    --color-sec: #db6400;
+    --color-grey: #eee;
+    --color-dark-grey: #222831;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+
+
+body {
+    font-family: Roboto ;
+    font-weight: 400, 700;
+    background-color:   hsl(235, 18%, 26%);
+    font-size : 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+
+.main .container{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    padding: 2.5rem;
+    gap: 50px;
+}
+
+
+
+.main .container h1{
+    font-size: 3.5em;
+    color:hsl(235, 18%, 26%);
+    margin: 80px auto 30px auto;
+}
+
+.main .container ul{
+    list-style-type: none;
+}
+
+.main .container ul li {
+    margin: 20px auto 20px auto;
+
+
+}
+
+.main .container ul li i{
+    background-color:hsl(4, 100%, 67%) ;
+    color: white;
+    border-radius: 50%;
+}
+
+
+
+
+.main .container .content button{
+    background-color: hsl(235, 18%, 26%);
+    color: white;
+    display: block;
+    width: 90%;
+    height: 50px;
+    margin: 20px 0;
+    border-radius: 8px;
+    border: none;
+}
+.main .container .content .required{
+    margin-left: 160px;
+    color: red;
+}
+.main .container .content .email-label{
+    margin-left: 160px;
+}
+.main .container .content input{
+    display: block;
+    width: 90%;
+    height: 50px;
+    border-radius: 8px;
+    padding-left: 15px;
+    border: 0.1px solid hsl(231, 7%, 60%);
+    outline: none;
+    margin-top: 10px;
+
+}
+
+.main .container .content input.active{
+    border: 1px solid red;
+}
+
+.main .container .content input.active::placeholder{
+    color: red;
+}
+
+ .main .container .content button:hover{
+    background-color: hsl(4, 100%, 67%);
+    font-size: 1.0em;
+    color: #000;
+}
+
+
+.success .container{
+    background-color: white;
+    width: 500px;
+    height: 50vh;
+    padding: 0 50px 20px 50px;
+    border-radius: 20px;
+    color: #222831;
+}
+
+.success .container h1{
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.success .container p{
+    margin-block: 20px;
+
+}
+
+.success .container img{
+    margin: 30px auto 20px auto;
+    background-color:hsl(4, 100%, 67%) ;
+    color: white;
+    border-radius: 50%;
+    font-size: 40px;
+
+}
+
+.success .container button{
+    background-color: hsl(235, 18%, 26%);
+    color: white;
+    display: block;
+    width: 90%;
+    height: 50px;
+    margin: 20px 0;
+    border-radius: 5px;
+    border: none;
+    font-size: inherit;
+}
+
+ .success .container button:hover{
+    background-color: hsl(4, 100%, 67%);
+}
+
+
+
+.hide{
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    .main{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .main .container{
+        border-radius: 0;
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .main .container .content{
+        width: 85%;
+        margin: auto;
+
+    }
+    .main .container .content h1{
+        font-size: 2.4rem;
+        margin: 1rem 0;
+    }
+
+    .image{
+        content: url("assets/images/illustration-sign-up-mobile.svg");
+        width: 100%;
+    }
+
+
+  }
+
+  @media screen and (max-width: 426px) {
+
+
+    .success{
+        height: 100%;
+        width: 100%;
+
+    }
+
+    .success .container{
+        height: 100%;
+        width: 100%;
+        border-radius: 0;
+
+    }
+
+    .success .container i{
+        font-size: 50px;
+        margin-top: 100px;
+    }
+
+    .success .container button{
+        margin-top: 400px;
+        width: 100%;
+    }
+
+  }
+
+
